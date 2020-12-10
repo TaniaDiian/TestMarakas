@@ -1,6 +1,6 @@
 <?php
 
-class Uploader
+class LoadXml
 {
    
     public function getFile($path){

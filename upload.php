@@ -1,12 +1,12 @@
 <?php 
-    include ("Traits/Uploader.php");
+    include ("Traits/LoadXml.php");
     include ("Servicess/Parser.php");
     include ("Servicess/InsertToCSV.php");
 
     if(isset($_POST['fupload']))
     {
 
-        $uploader = new Uploader();
+        $uploader = new LoadXml();
         $xml = $uploader->getFile($_POST['fileToUpload']); 
 
         $parse = new Parser();
